@@ -1,6 +1,6 @@
-
+//FIRST TASK
 let array = [5, 6, 3, 2, 3, 4, 5];
-console.log(`base array: [${array}]`)
+console.log(`First task \nbase array: [${array}]`)
 let hasDuplicates = (array) => {
     let duplicates = [];
     for (const index in array) {
@@ -19,3 +19,8 @@ let deleteDuplicated = (array) => {
 
 deleteDuplicated(array);
 console.log(`modified array: [${array}]`)
+// /FIRST TASK
+
+//SECOND TASK
+//make it into an array...
+// /SECOND TASK
