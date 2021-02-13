@@ -31,14 +31,15 @@ const birdizeVowel = (char) => {
     return char
 }
 
-const toBirdLanguage = (string) => {
+const toBirdLanguage = (input) => {
     let birdized = [];
-    for (char of string) {
+    for (char of input) {
         birdized.push(birdizeVowel(char));
     }
     return birdized.join('')
 }
 
+toBirdLanguage(text)
 console.log(`modified text: ${toBirdLanguage(text)}`)
 // /SECOND TASK
 
@@ -61,6 +62,8 @@ let howManyZero = (matrix) => {
 console.log(`there are ${howManyZero(matrix)} lines with only 0 values`)
 // /THIRD TASK
 
+//FOURTH TASK
+console.log(`Fourth task`)
 let dict = [
     {
         en: "moon",
@@ -117,8 +120,17 @@ let translate = (word, from, to) => {
         console.log(`the word you are looking for is ${translated}`)
     }
     else{
-        console.log('the word, or languages you are looking for are non-existing')
+        console.log('no such word or language')
         return undefined
     }
 }
+console.log(`translate('lány', 'hu', 'de')`)
 translate('lány', 'hu', 'de')
+
+console.log(`translate('fox','en','rs')`)
+translate('fox','en','rs')
+
+console.log(`translate('kox','en','rs')`)
+translate('kox','hu','rs')
+
+//FOURT TASK
