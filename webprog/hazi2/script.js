@@ -1,5 +1,14 @@
 const cardNumber = document.querySelector("#number")
-const bankImage = document.querySelector("#bank-image")
+//const bankImage = document.querySelector("#bank-image")
+const cardBackground = document.querySelector(".card-background")
+
+// region create image element
+const bankImage = document.createElement("img")
+bankImage.classList.add('bank-image')
+bankImage.style.display = 'none'
+cardBackground.appendChild(bankImage)
+
+// endregion
 
 const card = {
     number: '',
@@ -8,9 +17,9 @@ const card = {
 }
 
 const banks = {
-    visa: 'images/visa.png', //4
-    mastercard: 'images/mastercard.png', //5
-    maestro: 'images/maestro.png' //6
+    visa: 'images/visa.png',
+    mastercard: 'images/mastercard.png',
+    maestro: 'images/maestro.png'
 }
 
 // region cardNumber validation
@@ -27,14 +36,19 @@ const validateCardNumber = () => {
 
     if (parseInt(validCardNumber[0]) === 4) {
         bankImage.src = banks.visa
+        bankImage.style.display = 'block'
     }
     if (parseInt(validCardNumber[0]) === 5) {
         bankImage.src = banks.mastercard
+        bankImage.style.display = 'block'
     }
     if (parseInt(validCardNumber[0]) === 6) {
         bankImage.src = banks.maestro
+        bankImage.style.display = 'block'
     }
-
+    if(!([4,5,6].includes(parseInt(validCardNumber[0])))){
+        bankImage.style.display = 'none'
+    }
 
     if (validCardNumber.length === 16) {
         cardNumber.classList.add("input-success");

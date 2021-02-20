@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/gyorgynovak/CLionProjects/untitled/complex.cpp
+complex.h
+C:/Users/gyorgynovak/CLionProjects/untitled/complex.h
+math.h
+-
+
+C:/Users/gyorgynovak/CLionProjects/untitled/complex.h
+
+C:/Users/gyorgynovak/CLionProjects/untitled/main.cpp
+iostream
+-
+vector
+-
+complex.h
+C:/Users/gyorgynovak/CLionProjects/untitled/complex.h
+

@@ -55,8 +55,9 @@ body {
 
 .bank-image{
     position: absolute;
-    right: 20px;
-    top: 25px;
+    right: 45px;
+    top: 37px;
+    height: 40px;
 }
 
 .input-success{
