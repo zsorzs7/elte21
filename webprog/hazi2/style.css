@@ -23,24 +23,49 @@ body {
 }
 
 .card-background{
-    margin-top: 28px;
     position: relative;
     width: 100%;
-    height: 280px;
     background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    padding: 10px;
+
+}
+
+.valid-flex{
+    display: flex;
+    flex-direction: row;
+}
+
+.input {
+    font-family: 'Abel', sans-serif;
+    margin: 10px;
+    width: 50%;
+    color: #ffffff;
+    font-size: 1.2rem;
+    padding: 1.5rem 2rem;
+    background-color: rgba(217, 217, 217, 0.9);
+    border: 3px solid transparent;
+    transition: all 0.3s;
     border-radius: 15px;
 }
 
-.card-logo{
-    text-align: center;
-    font-size: 50px;
-    font-family: 'Abel', sans-serif;
-    font-weight: 200;
-    color: #ababab;
-    opacity: 0.2;
-    position: absolute;
-    padding-top: 5px;
-    padding-left: 17px;
+.input-progress{
+    border-color: #d7d7a1;
 }
+
+.bank-image{
+    position: absolute;
+    right: 20px;
+    top: 25px;
+}
+
+.input-success{
+    border-color: #a2dda2;
+}
+
+.input::placeholder{
+    color: white;
+}
+
 
 
