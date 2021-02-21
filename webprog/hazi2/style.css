@@ -23,6 +23,7 @@ body {
 }
 
 .card-background{
+    margin-top: 20px;
     position: relative;
     width: 100%;
     background-color: rgba(255, 255, 255, 0.9);
@@ -49,8 +50,37 @@ body {
     border-radius: 15px;
 }
 
-.input-progress{
-    border-color: #d7d7a1;
+.pay-button{
+    font-family: 'Abel', sans-serif;
+    margin: 10px;
+    color: #ffffff;
+    font-size: 1.2rem;
+    padding: 1.5rem 2rem;
+    background-color: rgba(171, 85, 85, 0.9);
+    border: 3px solid transparent;
+    transition: all 0.3s;
+    border-radius: 15px;
+    cursor: pointer;
+    text-align: center;
+}
+.pay-button:hover{
+    user-select: none;
+    background-color: rgba(177, 45, 45, 0.9);
+}
+
+.you-have{
+    font-family: 'Abel', sans-serif;
+    color: #5d5d5d;
+    text-align: center;
+    font-weight: 100;
+}
+
+.game-over{
+    color: #913f3f;
+}
+
+.price{
+    font-size: 50px;
 }
 
 .bank-image{
@@ -62,6 +92,10 @@ body {
 
 .input-success{
     border-color: #a2dda2;
+}
+
+.input-fail{
+    border-color: #d28383;
 }
 
 .input::placeholder{

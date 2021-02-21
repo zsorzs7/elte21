@@ -9,7 +9,8 @@
     <!-- region style -->
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Abel&family=Orbitron&family=Pacifico&display=swap" rel="stylesheet"> <!-- endregion -->
+    <link href="https://fonts.googleapis.com/css2?family=Abel&family=Orbitron&family=Pacifico&display=swap"
+          rel="stylesheet"> <!-- endregion -->
 </head>
 <body>
 
@@ -17,18 +18,37 @@
     <div class="background-blur">
         <div class="spring">
             <!-- region card -->
-            <div class="card-background">
-                <img  class="bank-image" id="bank-image" >
-                <form>
-                    <label for="number"></label><input type="text" class="input" id="number" placeholder="Card number"/>
-                   <div class="valid-flex">
-                    <label for="expiration"></label><input type="text" class="input" id="expiration" placeholder="Expiration date"/>
-                    <label for="ccv"></label><input type="text" class="input" id="ccv" placeholder="CCV"/>
-                   </div>
-                </form>
+            <div id="not-game-over">
+                <div class="card-background">
+                    <img class="bank-image" id="bank-image">
+                    <form id="form2">
+                        <label for="number"></label><input type="text" class="input" id="number"
+                                                           placeholder="Card number"/>
+                    </form>
 
+                </div>
+                <div id="if-valid">
+                    <div class="card-background">
+                        <form id="form">
+                            <label for="price"></label><input type="text" class="input" id="price" placeholder="Price"/>
+                            <p class="pay-button" id="pay-button">Pay!</p>
+                        </form>
+                    </div>
+                    <div class="card-background">
+                        <h1 class="you-have">
+                            Balance: <span id="current-balance" class="price"></span> HUF
+                        </h1>
+                    </div>
+                </div>
+                <!-- endregion -->
             </div>
-            <!-- endregion -->
+            <div id="game-over">
+                <div class="card-background">
+                    <h1 class="you-have game-over">
+                        GAME OVER!
+                    </h1>
+                </div>
+            </div>
         </div>
     </div>
 </div>
